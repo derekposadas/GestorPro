@@ -1,0 +1,10 @@
+Options -Indexes
+
+# Permitir acceso a archivos PHP en /api
+<FilesMatch "\.php$">
+    Allow from all
+</FilesMatch>
+
+# Cabeceras de seguridad básicas
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
