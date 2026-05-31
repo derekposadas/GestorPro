@@ -1,6 +1,6 @@
-# InventarioDAM - Guía de instalación paso a paso
+# GestorPro - Guía de instalación paso a paso
 
-Sistema de gestión de inventario y ventas para portfolio DAM.
+Sistema de gestión de inventario y ventas.
 Stack: JavaScript + PHP + MySQL + Apache (XAMPP)
 
 ---
@@ -47,7 +47,7 @@ C:\xampp\htdocs\inventario\
 4. Con la base de datos seleccionada, haz clic en la pestaña **SQL**
 5. Abre el archivo `database.sql` con el Bloc de notas
 6. Copia todo el contenido y pégalo en el cuadro de texto de phpMyAdmin
-7. Pulsa el botón **Ejecutar** (o "Go")
+7. Pulsa el botón **Continuar**
 8. Verás las tablas creadas en el panel izquierdo ✓
 
 ---
@@ -109,25 +109,6 @@ define('DB_PASS', '');       // Contraseña (por defecto vacía en XAMPP)
 - En XAMPP, abre `C:\xampp\apache\conf\httpd.conf`
 - Busca `#LoadModule rewrite_module` y quita el `#`
 - Reinicia Apache
-
----
-
-## ESTRUCTURA DEL PROYECTO
-
-```
-inventario/
-├── index.html          → Aplicación web completa (SPA)
-├── .htaccess           → Configuración Apache
-├── database.sql        → Script de base de datos con datos de ejemplo
-└── api/
-    ├── config.php      → Configuración DB y función de conexión
-    ├── auth.php        → Login / logout / sesión
-    ├── dashboard.php   → Estadísticas y KPIs
-    ├── productos.php   → CRUD de productos
-    ├── ventas.php      → CRUD de ventas (con transacciones)
-    ├── clientes.php    → CRUD de clientes + categorías
-    └── usuarios.php    → CRUD de usuarios (solo admin)
-```
 
 ---
 
